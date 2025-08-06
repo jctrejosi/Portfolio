@@ -1,24 +1,35 @@
 import { ScrollSnap } from "@/components/ScrollSnap";
+import { HeroSection } from "@/components/HeroSection";
+import { ContactForm } from "@/components/ContactForm";
+import { WorkSection } from "@/components/WorkSection";
+import { IntroductionSection } from "@/components/IntroductionSection";
 
-const example1 = (
-  <div>
-    <h1>Section 1</h1>
-    <p>This is the first section.</p>
-  </div>
-);
-const example2 = (
-  <div>
-    <h1>Section 2</h1>
-    <p>This is the second section.</p>
-  </div>
-);
-const example3 = (
-  <div>
-    <h1>Section 3</h1>
-    <p>This is the third section.</p>
-  </div>
-);
+const projects = [
+  {
+    name: "hellotax",
+    logo: "/logos/hellotax.svg",
+    url: "https://app.hellotax.com",
+  },
+  { name: "Conectar", logo: "/logos/conectar.svg" },
+  {
+    name: "John Deere",
+    logo: "/logos/john-deere.svg",
+    url: "https://atu300.deere.com",
+  },
+  { name: "olaqlu", logo: "/logos/olaqlu.svg" },
+  { name: "Pixel2HTML", logo: "/logos/pixel2html.svg" },
+  { name: "dropd", logo: "/logos/dropd.svg" },
+];
 
 export const Home = () => {
-  return <ScrollSnap>{[example1, example2, example3]}</ScrollSnap>;
+  return (
+    <ScrollSnap>
+      {[
+        <HeroSection />,
+        <IntroductionSection />,
+        <WorkSection projects={projects} />,
+        <ContactForm />,
+      ]}
+    </ScrollSnap>
+  );
 };
