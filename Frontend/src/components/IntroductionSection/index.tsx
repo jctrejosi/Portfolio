@@ -45,13 +45,13 @@ export const IntroductionSection = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://linkedin.com/in/tuusuario"
+            href="https://www.linkedin.com/in/juan-carlos-trejos-26605b142/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
-          <a href="mailto:tucorreo@ejemplo.com">
+          <a href="mailto:jctrejosi@unal.edu.co">
             <FaEnvelope />
           </a>
         </div>

@@ -5,8 +5,7 @@ export function HeroSection() {
     <section className={styles.hero}>
       <div className={styles.left}>
         <h1 className={styles.title}>
-          <span>Frontend</span>{" "}
-          <span className={styles.highlight}>Developer.</span>
+          <span>Web</span> <span className={styles.highlight}>Developer</span>
         </h1>
         <p className={styles.subtitle}>
           I like to craft solid and scalable frontend products with great user

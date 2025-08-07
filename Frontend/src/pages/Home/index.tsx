@@ -6,19 +6,20 @@ import { IntroductionSection } from "@/components/IntroductionSection";
 
 const projects = [
   {
-    name: "hellotax",
-    logo: "/logos/hellotax.svg",
-    url: "https://app.hellotax.com",
+    name: "GAIA",
+    logo: "/logos/gaia.svg",
+    url: "https://gaia.manizales.unal.edu.co/grupo_inv/grupo-de-investigacion-en-ambientes-inteligentes-adaptativos-gaia",
   },
-  { name: "Conectar", logo: "/logos/conectar.svg" },
   {
-    name: "John Deere",
-    logo: "/logos/john-deere.svg",
-    url: "https://atu300.deere.com",
+    name: "Aranda Software",
+    logo: "/logos/aranda.svg",
+    url: "https://www.arandasoftware.com/",
   },
-  { name: "olaqlu", logo: "/logos/olaqlu.svg" },
-  { name: "Pixel2HTML", logo: "/logos/pixel2html.svg" },
-  { name: "dropd", logo: "/logos/dropd.svg" },
+  {
+    name: "Roiback Latam",
+    logo: "/logos/roiback.svg",
+    url: "https://en.roiback.com/",
+  },
 ];
 
 export const Home = () => {
