@@ -4,7 +4,7 @@ import { RouterProvider } from "react-router-dom";
 import { router } from "@/routes";
 import styles from "@/styles/styles.module.css";
 import "@/styles/styles.css";
-// import "components-seed/components-seed.css";
+import "components-seed/bundle/components-seed.css";
 
 function applySystemTheme() {
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
