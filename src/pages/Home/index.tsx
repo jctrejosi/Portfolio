@@ -5,6 +5,7 @@ import {
   WorkSectionAndromeda,
   ContactFormAndromeda,
 } from "components-seed";
+import bg_skull from "@/assets/images/bg_skull.jpg";
 
 const projects = [
   {
@@ -29,7 +30,7 @@ export const Home = () => {
     <ScrollSnapAndromeda
       components={[
         {
-          component: <HeroSectionAndromeda />,
+          component: <HeroSectionAndromeda backgroundImage={bg_skull} />,
           dotLabel: "init",
         },
         {
