@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { router } from "@/routes";
 import "@/styles/index.css";
-import "components-seed/bundle/index.css";
 
 function applySystemTheme() {
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;

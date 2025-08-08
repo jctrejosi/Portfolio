@@ -6,6 +6,7 @@ import {
   ContactFormAndromeda,
 } from "components-seed";
 import bg_skull from "@/assets/images/bg_skull.jpg";
+import imageProfile from "@/assets/images/profile.jpg";
 
 const projects = [
   {
@@ -30,20 +31,33 @@ export const Home = () => {
     <ScrollSnapAndromeda
       components={[
         {
-          component: <HeroSectionAndromeda backgroundImage={bg_skull} />,
-          dotLabel: "init",
+          component: (
+            <HeroSectionAndromeda
+              backgroundImage={bg_skull}
+              style={
+                {
+                  "--highlight-1-color": "var(--base-color-3)",
+                  "--highlight-2-color": "var(--base-color-5)",
+                  "--subtitle-color": "var(--base-color-4)",
+                  "--highlight-text-color": "var(--base-color-2)",
+                } as React.CSSProperties
+              }
+              imageProfile={imageProfile}
+            />
+          ),
+          dotLabel: "Init",
         },
         {
           component: <IntroductionSectionAndromeda />,
-          dotLabel: "init",
+          dotLabel: "Hi there",
         },
         {
           component: <WorkSectionAndromeda projects={projects} />,
-          dotLabel: "init",
+          dotLabel: "/Work",
         },
         {
           component: <ContactFormAndromeda />,
-          dotLabel: "init",
+          dotLabel: "Contact me",
         },
       ]}
     />

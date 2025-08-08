@@ -1,16 +1,9 @@
 body.light {
-  --main-bg: white;
-  --text-color: black;
+  --main-bg: var(--base-color-1);
+  --text-color: var(--base-color-9);
 }
 
 body.dark {
-  --base-color-1: #f1f0f8;
-  --base-color-2: #e0eaf5;
-  --base-color-3: #92badd;
-  --base-color-4: #ff871f;
-  --base-color-5: #262946;
-  --base-color-6: #0f122c;
-
-  --main-bg: #0f122c;
-  --text-color: #f0f0f0;
+  --main-bg: var(--base-color-6);
+  --text-color: var(--base-color-1);
 }
