@@ -1,8 +1,10 @@
-import { ScrollSnap } from "@/components/ScrollSnap";
-import { HeroSection } from "@/components/HeroSection";
-import { ContactForm } from "@/components/ContactForm";
-import { WorkSection } from "@/components/WorkSection";
-import { IntroductionSection } from "@/components/IntroductionSection";
+import {
+  ScrollSnapAndromeda,
+  HeroSectionAndromeda,
+  IntroductionSectionAndromeda,
+  WorkSectionAndromeda,
+  ContactFormAndromeda,
+} from "components-seed";
 
 const projects = [
   {
@@ -24,13 +26,25 @@ const projects = [
 
 export const Home = () => {
   return (
-    <ScrollSnap>
-      {[
-        <HeroSection />,
-        <IntroductionSection />,
-        <WorkSection projects={projects} />,
-        <ContactForm />,
+    <ScrollSnapAndromeda
+      components={[
+        {
+          component: <HeroSectionAndromeda />,
+          dotLabel: "init",
+        },
+        {
+          component: <IntroductionSectionAndromeda />,
+          dotLabel: "init",
+        },
+        {
+          component: <WorkSectionAndromeda projects={projects} />,
+          dotLabel: "init",
+        },
+        {
+          component: <ContactFormAndromeda />,
+          dotLabel: "init",
+        },
       ]}
-    </ScrollSnap>
+    />
   );
 };
