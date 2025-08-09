@@ -422,10 +422,9 @@ color-convert@^2.0.1:
 color-name@~1.1.4:
   version "1.1.4"
 
-components-seed@^0.0.7:
+"components-seed@file:../components-seed":
   version "0.0.7"
-  resolved "https://registry.npmjs.org/components-seed/-/components-seed-0.0.7.tgz"
-  integrity sha512-UvoL5sh79Qfv+zolQq1I7y0IMoPm1UROX4X94c73xlhGmWE+zaQhxH44JUbr1DH5HEAzpOoCrJO1ZzvDtgFlLA==
+  resolved "file:../components-seed"
   dependencies:
     glob "^11.0.3"
     path "^0.12.7"
@@ -1419,7 +1418,7 @@ punycode@^2.1.0:
 queue-microtask@^1.2.2:
   version "1.2.3"
 
-react-dom@^19.1.0, react-dom@^19.1.1, react-dom@>=18:
+react-dom@^19.1.0, react-dom@>=18:
   version "19.1.1"
   dependencies:
     scheduler "^0.26.0"

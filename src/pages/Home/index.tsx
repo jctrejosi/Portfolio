@@ -1,10 +1,14 @@
 import {
-  ScrollSnapAndromeda,
+  ContactFormAndromeda,
   HeroSectionAndromeda,
   IntroductionSectionAndromeda,
+  ScrollSnapAndromeda,
   WorkSectionAndromeda,
-  ContactFormAndromeda,
 } from 'components-seed'
+
+import logoAranda from '@/assets/images/logo-aranda.webp'
+import logoGaia from '@/assets/images/logo-gaia.png'
+import logoRoiback from '@/assets/images/logo-roiback.svg'
 
 import bg_skull from '@/assets/images/bg_skull.jpg'
 import imageProfile from '@/assets/images/profile.jpg'
@@ -12,17 +16,17 @@ import imageProfile from '@/assets/images/profile.jpg'
 const projects = [
   {
     name: 'GAIA',
-    logo: '/logos/gaia.svg',
+    logo: logoGaia,
     url: 'https://gaia.manizales.unal.edu.co/grupo_inv/grupo-de-investigacion-en-ambientes-inteligentes-adaptativos-gaia',
   },
   {
     name: 'Aranda Software',
-    logo: '/logos/aranda.svg',
-    url: 'https://www.arandasoftware.com/',
+    logo: logoAranda,
+    url: 'https://arandasoft.com/en/',
   },
   {
     name: 'Roiback Latam',
-    logo: '/logos/roiback.svg',
+    logo: logoRoiback,
     url: 'https://en.roiback.com/',
   },
 ]
@@ -30,7 +34,7 @@ const projects = [
 export const Home = () => {
   return (
     <ScrollSnapAndromeda
-      components={[
+      sections={[
         {
           component: (
             <HeroSectionAndromeda
@@ -43,6 +47,7 @@ export const Home = () => {
         {
           component: <IntroductionSectionAndromeda />,
           dotLabel: 'Hi there',
+          backgroundColor: 'var(--bg-secondary)',
         },
         {
           component: <WorkSectionAndromeda projects={projects} />,
