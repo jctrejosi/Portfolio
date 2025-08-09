@@ -1,9 +1,10 @@
 {
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": ["typescript", "typescriptreact"],
   "editor.codeActionsOnSave": {
-    "source.fixAll": "always",
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always",
+    "source.removeUnusedImports": "always",
+    "source.sortImports": "always"
   }
 }

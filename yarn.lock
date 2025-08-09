@@ -422,10 +422,10 @@ color-convert@^2.0.1:
 color-name@~1.1.4:
   version "1.1.4"
 
-components-seed@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.npmjs.org/components-seed/-/components-seed-0.0.6.tgz"
-  integrity sha512-UlifRAPQVVHn9pq5X+gDliCcPJCohLeY9njy5fDANKQS1XO08B/dZHcil1rD7/S+wBJx63pQIWHY9iuDZz+qUg==
+components-seed@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npmjs.org/components-seed/-/components-seed-0.0.7.tgz"
+  integrity sha512-UvoL5sh79Qfv+zolQq1I7y0IMoPm1UROX4X94c73xlhGmWE+zaQhxH44JUbr1DH5HEAzpOoCrJO1ZzvDtgFlLA==
   dependencies:
     glob "^11.0.3"
     path "^0.12.7"
