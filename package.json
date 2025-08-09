@@ -15,7 +15,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "components-seed": "^0.0.7",
+    "components-seed": "0.0.8",
     "glob": "^11.0.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

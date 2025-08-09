@@ -17,17 +17,26 @@ const projects = [
   {
     name: 'GAIA',
     logo: logoGaia,
-    url: 'https://gaia.manizales.unal.edu.co/grupo_inv/grupo-de-investigacion-en-ambientes-inteligentes-adaptativos-gaia',
+    link: {
+      url: 'https://gaia.manizales.unal.edu.co/grupo_inv/grupo-de-investigacion-en-ambientes-inteligentes-adaptativos-gaia',
+      text: 'Website',
+    },
   },
   {
     name: 'Aranda Software',
     logo: logoAranda,
-    url: 'https://arandasoft.com/en/',
+    link: {
+      url: 'https://arandasoft.com/en/',
+      text: 'Website',
+    },
   },
   {
     name: 'Roiback Latam',
     logo: logoRoiback,
-    url: 'https://en.roiback.com/',
+    link: {
+      url: 'https://en.roiback.com/',
+      text: 'Website',
+    },
   },
 ]
 
@@ -50,12 +59,13 @@ export const Home = () => {
           backgroundColor: 'var(--bg-secondary)',
         },
         {
-          component: <WorkSectionAndromeda projects={projects} />,
+          component: <WorkSectionAndromeda items={projects} />,
           dotLabel: '/Work',
         },
         {
-          component: <ContactFormAndromeda />,
+          component: <ContactFormAndromeda sendTo="contact@myportfolio.com" />,
           dotLabel: 'Contact me',
+          backgroundColor: 'var(--bg-secondary)',
         },
       ]}
     />
