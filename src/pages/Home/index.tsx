@@ -34,14 +34,6 @@ export const Home = () => {
           component: (
             <HeroSectionAndromeda
               backgroundImage={bg_skull}
-              style={
-                {
-                  "--highlight-1-color": "var(--base-color-3)",
-                  "--highlight-2-color": "var(--base-color-5)",
-                  "--subtitle-color": "var(--base-color-4)",
-                  "--highlight-text-color": "var(--base-color-2)",
-                } as React.CSSProperties
-              }
               imageProfile={imageProfile}
             />
           ),
