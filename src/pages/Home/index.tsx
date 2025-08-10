@@ -11,7 +11,7 @@ import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
 
 import bg_skull from '@/assets/images/bg_skull.jpg'
-import imageProfile from '@/assets/images/profile.jpg'
+import imageProfile from '@/assets/images/lion-rasta.png'
 
 const projects = [
   {
