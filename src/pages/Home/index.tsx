@@ -10,9 +10,6 @@ import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
 
-import bg_skull from '@/assets/images/bg_skull.jpg'
-import imageProfile from '@/assets/images/lion-rasta.png'
-
 const projects = [
   {
     name: 'GAIA',
@@ -46,10 +43,7 @@ export const Home = () => {
       sections={[
         {
           component: (
-            <HeroSectionAndromeda
-              backgroundImage={bg_skull}
-              imageProfile={imageProfile}
-            />
+            <HeroSectionAndromeda />
           ),
           dotLabel: 'Init',
         },
