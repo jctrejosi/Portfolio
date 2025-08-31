@@ -46,15 +46,18 @@ export const Home = () => {
             <HeroSectionAndromeda />
           ),
           dotLabel: 'Init',
+          dotColor: 'var(--base-color-7)',
         },
         {
           component: <IntroductionSectionAndromeda />,
           dotLabel: 'Hi there',
+          dotColor: 'var(--base-color-6)',
           backgroundColor: 'var(--bg-secondary)',
         },
         {
           component: <WorkSectionAndromeda items={projects} />,
           dotLabel: '/Work',
+          dotColor: 'var(--base-color-4)',
         },
         {
           component: <ContactFormAndromeda sendTo="contact@myportfolio.com" />,
