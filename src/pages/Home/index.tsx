@@ -9,6 +9,7 @@ import {
 import logoAranda from '@/assets/images/logo-aranda.webp'
 import logoGaia from '@/assets/images/logo-gaia.png'
 import logoRoiback from '@/assets/images/logo-roiback.svg'
+import imageProfile from '@/assets/images/lion-rasta.png'
 
 const projects = [
   {
@@ -43,7 +44,7 @@ export const Home = () => {
       sections={[
         {
           component: (
-            <HeroSectionAndromeda />
+            <HeroSectionAndromeda imageProfile={imageProfile} />
           ),
           dotLabel: 'Init',
           dotColor: 'var(--base-color-7)',
@@ -58,6 +59,7 @@ export const Home = () => {
           component: <WorkSectionAndromeda items={projects} />,
           dotLabel: '/Work',
           dotColor: 'var(--base-color-4)',
+          backgroundColor: 'var(--bg-primary)',
         },
         {
           component: <ContactFormAndromeda sendTo="contact@myportfolio.com" />,
